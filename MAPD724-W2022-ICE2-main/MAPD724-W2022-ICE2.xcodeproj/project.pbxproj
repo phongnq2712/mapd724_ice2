@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		316013A327A365BA00C8A6DB /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316013A227A365BA00C8A6DB /* Cloud.swift */; };
+		316013A527A3660900C8A6DB /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316013A427A3660900C8A6DB /* Island.swift */; };
 		31ABDC242798E22D0073645D /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABDC232798E22D0073645D /* GameObject.swift */; };
 		31ABDC262798E75D0073645D /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABDC252798E75D0073645D /* GameProtocol.swift */; };
 		31ABDC292798EC0A0073645D /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABDC282798EC0A0073645D /* Ocean.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		316013A227A365BA00C8A6DB /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		316013A427A3660900C8A6DB /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		31ABDC232798E22D0073645D /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		31ABDC252798E75D0073645D /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		31ABDC282798EC0A0073645D /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			children = (
 				31ABDC282798EC0A0073645D /* Ocean.swift */,
 				31ABDC2A2798F25D0073645D /* Plane.swift */,
+				316013A227A365BA00C8A6DB /* Cloud.swift */,
+				316013A427A3660900C8A6DB /* Island.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -174,9 +180,11 @@
 			files = (
 				31ABDC242798E22D0073645D /* GameObject.swift in Sources */,
 				31ABDC262798E75D0073645D /* GameProtocol.swift in Sources */,
+				316013A527A3660900C8A6DB /* Island.swift in Sources */,
 				E9222979278FAAC600353E41 /* GameScene.swift in Sources */,
 				E922297B278FAAC600353E41 /* GameViewController.swift in Sources */,
 				31ABDC292798EC0A0073645D /* Ocean.swift in Sources */,
+				316013A327A365BA00C8A6DB /* Cloud.swift in Sources */,
 				E9222973278FAAC600353E41 /* AppDelegate.swift in Sources */,
 				31ABDC2B2798F25D0073645D /* Plane.swift in Sources */,
 			);

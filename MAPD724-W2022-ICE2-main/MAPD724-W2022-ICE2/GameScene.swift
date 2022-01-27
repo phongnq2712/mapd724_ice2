@@ -11,7 +11,9 @@ class GameScene: SKScene
 {
     
     var ocean: Ocean?
+    var island: Island?
     var plane: Plane?
+    var clouds: [Cloud] = []
     
     override func didMove(to view: SKView) {
         screenWidth = frame.width
@@ -21,10 +23,23 @@ class GameScene: SKScene
         ocean = Ocean()
         ocean?.position = CGPoint(x:0, y:773)
         addChild(ocean!)
+        // add island to the Scene
+        island = Island()
+        addChild(island!)
         // add Plane to the Scence
         plane = Plane()
         plane?.position = CGPoint(x: 0, y: -495)
         addChild(plane!)
+        
+        // add a single cloud
+//        cloud = Cloud()
+//        addChild(cloud!)
+        for index in 0...2
+        {
+            let cloud: Cloud = Cloud()
+            clouds.append(cloud)
+            addChild(clouds[index])
+        }
     }
     
     
@@ -63,5 +78,12 @@ class GameScene: SKScene
         // Called before each frame is rendered
         ocean?.Update()
         plane?.Update()
+        island?.Update()
+//        cloud?.Update()
+        // update each cloud in clouds
+        for cloud in clouds
+        {
+            cloud.Update()
+        }
     }
 }
